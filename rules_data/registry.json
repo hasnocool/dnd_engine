@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "default_source_id": "srd-5.2.1",
+  "sources": [
+    {
+      "id": "srd-5.2.1",
+      "path": "sources/srd-5.2.1.source.json"
+    }
+  ],
+  "catalogs": {
+    "spells": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/spells.srd-5.2.1.json"
+      }
+    ]
+  }
+}

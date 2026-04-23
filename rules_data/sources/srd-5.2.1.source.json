@@ -1,0 +1,8 @@
+{
+  "source_id": "srd-5.2.1",
+  "source_type": "official_open_rules",
+  "version": "5.2.1",
+  "license": "CC",
+  "publisher": "Wizards of the Coast",
+  "notes": "Canonical open rules source used by this simulator."
+}
