@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "default_source_id": "srd-5.2.1",
   "sources": [
     {
@@ -8,10 +8,67 @@
     }
   ],
   "catalogs": {
+    "conditions": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/conditions.srd-5.2.1.json",
+        "count": 15
+      }
+    ],
     "spells": [
       {
         "source_id": "srd-5.2.1",
-        "path": "catalogs/spells.srd-5.2.1.json"
+        "path": "catalogs/spells.srd-5.2.1.json",
+        "count": 339
+      }
+    ],
+    "monsters": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/monsters.srd-5.2.1.json",
+        "count": 330
+      }
+    ],
+    "weapons": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/weapons.srd-5.2.1.json",
+        "count": 38
+      }
+    ],
+    "armor": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/armor.srd-5.2.1.json",
+        "count": 12
+      }
+    ],
+    "magic_items": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/magic_items.srd-5.2.1.json",
+        "count": 259
+      }
+    ],
+    "classes": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/classes.srd-5.2.1.json",
+        "count": 12
+      }
+    ],
+    "species": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/species.srd-5.2.1.json",
+        "count": 9
+      }
+    ],
+    "feats": [
+      {
+        "source_id": "srd-5.2.1",
+        "path": "catalogs/feats.srd-5.2.1.json",
+        "count": 17
       }
     ]
   }
