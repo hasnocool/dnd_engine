@@ -1,0 +1,173 @@
+[
+  {
+    "id": "padded_armor",
+    "name": "Padded Armor",
+    "source": "srd-5.2.1",
+    "category": "light",
+    "ac": {
+      "base": 11,
+      "add_dex": true
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": true,
+    "weight_lb": "8",
+    "cost": "5 GP"
+  },
+  {
+    "id": "leather_armor",
+    "name": "Leather Armor",
+    "source": "srd-5.2.1",
+    "category": "light",
+    "ac": {
+      "base": 11,
+      "add_dex": true
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": false,
+    "weight_lb": "10",
+    "cost": "10 GP"
+  },
+  {
+    "id": "studded_leather_armor",
+    "name": "Studded Leather Armor",
+    "source": "srd-5.2.1",
+    "category": "light",
+    "ac": {
+      "base": 12,
+      "add_dex": true
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": false,
+    "weight_lb": "13",
+    "cost": "45 GP"
+  },
+  {
+    "id": "hide_armor",
+    "name": "Hide Armor",
+    "source": "srd-5.2.1",
+    "category": "medium",
+    "ac": {
+      "base": 12,
+      "add_dex": true,
+      "max_dex_bonus": 2
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": false,
+    "weight_lb": "12",
+    "cost": "10 GP"
+  },
+  {
+    "id": "chain_shirt",
+    "name": "Chain Shirt",
+    "source": "srd-5.2.1",
+    "category": "medium",
+    "ac": {
+      "base": 13,
+      "add_dex": true,
+      "max_dex_bonus": 2
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": false,
+    "weight_lb": "20",
+    "cost": "50 GP"
+  },
+  {
+    "id": "breastplate",
+    "name": "Breastplate",
+    "source": "srd-5.2.1",
+    "category": "medium",
+    "ac": {
+      "base": 14,
+      "add_dex": true,
+      "max_dex_bonus": 2
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": false,
+    "weight_lb": "20",
+    "cost": "400 GP"
+  },
+  {
+    "id": "half_plate_armor",
+    "name": "Half Plate Armor",
+    "source": "srd-5.2.1",
+    "category": "medium",
+    "ac": {
+      "base": 15,
+      "add_dex": true,
+      "max_dex_bonus": 2
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": true,
+    "weight_lb": "40",
+    "cost": "750 GP"
+  },
+  {
+    "id": "ring_mail",
+    "name": "Ring Mail",
+    "source": "srd-5.2.1",
+    "category": "heavy",
+    "ac": {
+      "base": 14,
+      "add_dex": false
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": true,
+    "weight_lb": "40",
+    "cost": "30 GP"
+  },
+  {
+    "id": "chain_mail",
+    "name": "Chain Mail",
+    "source": "srd-5.2.1",
+    "category": "heavy",
+    "ac": {
+      "base": 16,
+      "add_dex": false
+    },
+    "strength_requirement": 13,
+    "stealth_disadvantage": true,
+    "weight_lb": "55",
+    "cost": "75 GP"
+  },
+  {
+    "id": "splint_armor",
+    "name": "Splint Armor",
+    "source": "srd-5.2.1",
+    "category": "heavy",
+    "ac": {
+      "base": 17,
+      "add_dex": false
+    },
+    "strength_requirement": 15,
+    "stealth_disadvantage": true,
+    "weight_lb": "60",
+    "cost": "200 GP"
+  },
+  {
+    "id": "plate_armor",
+    "name": "Plate Armor",
+    "source": "srd-5.2.1",
+    "category": "heavy",
+    "ac": {
+      "base": 18,
+      "add_dex": false
+    },
+    "strength_requirement": 15,
+    "stealth_disadvantage": true,
+    "weight_lb": "65",
+    "cost": "1,500 GP"
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "source": "srd-5.2.1",
+    "category": "shield",
+    "ac": {
+      "bonus": 2
+    },
+    "strength_requirement": null,
+    "stealth_disadvantage": false,
+    "weight_lb": "6",
+    "cost": "10 GP"
+  }
+]
