@@ -10,7 +10,7 @@
     "seed": {"type": "integer"},
     "round_limit": {"type": "integer", "minimum": 1},
     "rules_version": {"type": "string", "default": "5.2.1"},
-    "engine_version": {"type": "string", "default": "0.3.0"},
+    "engine_version": {"type": "string", "default": "0.4.0"},
     "creatures": {"type": "array", "minItems": 2, "items": {"$ref": "creature.schema.json"}}
   }
 }

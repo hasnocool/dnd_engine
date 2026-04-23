@@ -8,7 +8,30 @@
   "properties": {
     "id": {"type": "string", "minLength": 1},
     "name": {"type": "string", "minLength": 1},
-    "kind": {"type": "string", "enum": ["attack", "spell", "heal", "dash", "dodge", "disengage", "help", "custom"]},
+    "kind": {
+      "type": "string",
+      "enum": [
+        "attack",
+        "spell",
+        "heal",
+        "dash",
+        "dodge",
+        "disengage",
+        "help",
+        "multiattack",
+        "custom"
+      ]
+    },
+    "economy_slot": {
+      "type": "string",
+      "enum": ["action", "bonus_action", "reaction", "free"],
+      "default": "action"
+    },
+    "sub_actions": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "minItems": 1
+    },
     "attack_bonus": {"type": "integer"},
     "damage": {"type": "string", "pattern": "^\\s*\\d*d\\d+\\s*([+-]\\s*\\d+)?\\s*$"},
     "damage_type": {"type": "string", "default": "untyped"},
@@ -21,10 +44,21 @@
     "half_damage_on_save_override": {"type": "boolean"},
     "condition_on_failed_save_override": {"type": "string", "minLength": 1},
     "condition_duration_rounds_override": {"type": ["integer", "null"], "minimum": 1},
+    "upcast_to_level": {"type": "integer", "minimum": 0, "maximum": 9},
     "notes": {"type": "string"}
   },
   "allOf": [
-    {"if": {"properties": {"kind": {"const": "attack"}}, "required": ["kind"]}, "then": {"required": ["attack_bonus", "damage"]}},
-    {"if": {"properties": {"kind": {"const": "spell"}}, "required": ["kind"]}, "then": {"required": ["spell_ref"]}}
+    {
+      "if": {"properties": {"kind": {"const": "attack"}}, "required": ["kind"]},
+      "then": {"required": ["attack_bonus", "damage"]}
+    },
+    {
+      "if": {"properties": {"kind": {"const": "spell"}}, "required": ["kind"]},
+      "then": {"required": ["spell_ref"]}
+    },
+    {
+      "if": {"properties": {"kind": {"const": "multiattack"}}, "required": ["kind"]},
+      "then": {"required": ["sub_actions"]}
+    }
   ]
 }

@@ -17,10 +17,28 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "str": {"type": "integer"}, "dex": {"type": "integer"}, "con": {"type": "integer"},
-        "int": {"type": "integer"}, "wis": {"type": "integer"}, "cha": {"type": "integer"}
+        "str": {"type": "integer"},
+        "dex": {"type": "integer"},
+        "con": {"type": "integer"},
+        "int": {"type": "integer"},
+        "wis": {"type": "integer"},
+        "cha": {"type": "integer"}
       }
     },
+    "ability_scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "str": {"type": "integer"},
+        "dex": {"type": "integer"},
+        "con": {"type": "integer"},
+        "int": {"type": "integer"},
+        "wis": {"type": "integer"},
+        "cha": {"type": "integer"}
+      }
+    },
+    "proficiency_bonus": {"type": "integer", "default": 2},
+    "level": {"type": "integer", "minimum": 0, "default": 0},
     "actions": {"type": "array", "minItems": 1, "items": {"$ref": "action.schema.json"}},
     "conditions": {
       "type": "array",
@@ -36,6 +54,38 @@
       }
     },
     "speed_feet": {"type": "integer", "minimum": 0, "default": 30},
+    "spell_slots": {
+      "type": "object",
+      "default": {},
+      "patternProperties": {
+        "^[1-9]$": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "spell_slot_max": {
+      "type": "object",
+      "default": {},
+      "patternProperties": {
+        "^[1-9]$": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "concentration_spell": {"type": ["string", "null"]},
+    "action_used": {"type": "boolean", "default": false},
+    "bonus_action_used": {"type": "boolean", "default": false},
+    "reaction_used": {"type": "boolean", "default": false},
+    "damage_immunities": {"type": "array", "items": {"type": "string"}, "default": []},
+    "damage_resistances": {"type": "array", "items": {"type": "string"}, "default": []},
+    "damage_vulnerabilities": {"type": "array", "items": {"type": "string"}, "default": []},
+    "hit_dice_remaining": {"type": "integer", "minimum": 0, "default": 0},
+    "hit_die": {"type": "integer", "minimum": 0, "default": 0},
+    "death_save_successes": {"type": "integer", "minimum": 0, "maximum": 3, "default": 0},
+    "death_save_failures": {"type": "integer", "minimum": 0, "maximum": 3, "default": 0},
+    "stable": {"type": "boolean", "default": false},
+    "dead": {"type": "boolean", "default": false},
+    "exhaustion_level": {"type": "integer", "minimum": 0, "maximum": 6, "default": 0},
+    "charmed_by": {"type": "array", "items": {"type": "string"}, "default": []},
+    "focused_target_id": {"type": ["string", "null"]},
     "notes": {"type": "string"}
   }
 }

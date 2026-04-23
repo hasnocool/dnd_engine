@@ -1,0 +1,804 @@
+{
+  "encounter_name": "Spell Catalog Demo",
+  "seed": 1337,
+  "rules_version": "5.2.1",
+  "engine_version": "0.3.0",
+  "winner": "heroes",
+  "reason": "winner_found",
+  "final_state": [
+    {
+      "id": "fighter_1",
+      "name": "Human Fighter",
+      "team": "heroes",
+      "ac": 16,
+      "max_hp": 20,
+      "current_hp": 20,
+      "initiative": 22,
+      "saving_throws": {
+        "cha": 0,
+        "con": 3,
+        "dex": 1,
+        "int": 0,
+        "str": 4,
+        "wis": 1
+      },
+      "ability_scores": {
+        "cha": 10,
+        "con": 10,
+        "dex": 10,
+        "int": 10,
+        "str": 10,
+        "wis": 10
+      },
+      "proficiency_bonus": 2,
+      "level": 0,
+      "spell_slots": {},
+      "spell_slot_max": {},
+      "concentration_spell": null,
+      "action_used": true,
+      "bonus_action_used": false,
+      "reaction_used": false,
+      "damage_immunities": [],
+      "damage_resistances": [],
+      "damage_vulnerabilities": [],
+      "hit_dice_remaining": 0,
+      "hit_die": 0,
+      "death_save_successes": 0,
+      "death_save_failures": 0,
+      "stable": false,
+      "dead": false,
+      "conditions": []
+    },
+    {
+      "id": "wizard_1",
+      "name": "Elf Wizard",
+      "team": "heroes",
+      "ac": 12,
+      "max_hp": 14,
+      "current_hp": 14,
+      "initiative": 15,
+      "saving_throws": {
+        "cha": 0,
+        "con": 1,
+        "dex": 3,
+        "int": 5,
+        "str": -1,
+        "wis": 2
+      },
+      "ability_scores": {
+        "cha": 10,
+        "con": 10,
+        "dex": 10,
+        "int": 10,
+        "str": 10,
+        "wis": 10
+      },
+      "proficiency_bonus": 2,
+      "level": 0,
+      "spell_slots": {},
+      "spell_slot_max": {},
+      "concentration_spell": null,
+      "action_used": true,
+      "bonus_action_used": false,
+      "reaction_used": false,
+      "damage_immunities": [],
+      "damage_resistances": [],
+      "damage_vulnerabilities": [],
+      "hit_dice_remaining": 0,
+      "hit_die": 0,
+      "death_save_successes": 0,
+      "death_save_failures": 0,
+      "stable": false,
+      "dead": false,
+      "conditions": []
+    },
+    {
+      "id": "goblin_1",
+      "name": "Goblin Raider",
+      "team": "goblins",
+      "ac": 15,
+      "max_hp": 7,
+      "current_hp": 0,
+      "initiative": 8,
+      "saving_throws": {
+        "cha": -1,
+        "con": 0,
+        "dex": 2,
+        "int": -1,
+        "str": -1,
+        "wis": 0
+      },
+      "ability_scores": {
+        "cha": 10,
+        "con": 10,
+        "dex": 10,
+        "int": 10,
+        "str": 10,
+        "wis": 10
+      },
+      "proficiency_bonus": 2,
+      "level": 0,
+      "spell_slots": {},
+      "spell_slot_max": {},
+      "concentration_spell": null,
+      "action_used": false,
+      "bonus_action_used": false,
+      "reaction_used": false,
+      "damage_immunities": [],
+      "damage_resistances": [],
+      "damage_vulnerabilities": [],
+      "hit_dice_remaining": 0,
+      "hit_die": 0,
+      "death_save_successes": 0,
+      "death_save_failures": 0,
+      "stable": false,
+      "dead": true,
+      "conditions": []
+    },
+    {
+      "id": "shaman_1",
+      "name": "Goblin Shaman",
+      "team": "goblins",
+      "ac": 13,
+      "max_hp": 10,
+      "current_hp": 0,
+      "initiative": 12,
+      "saving_throws": {
+        "cha": 0,
+        "con": 0,
+        "dex": 1,
+        "int": 1,
+        "str": -1,
+        "wis": 2
+      },
+      "ability_scores": {
+        "cha": 10,
+        "con": 10,
+        "dex": 10,
+        "int": 10,
+        "str": 10,
+        "wis": 10
+      },
+      "proficiency_bonus": 2,
+      "level": 0,
+      "spell_slots": {},
+      "spell_slot_max": {},
+      "concentration_spell": null,
+      "action_used": true,
+      "bonus_action_used": false,
+      "reaction_used": false,
+      "damage_immunities": [],
+      "damage_resistances": [],
+      "damage_vulnerabilities": [],
+      "hit_dice_remaining": 0,
+      "hit_die": 0,
+      "death_save_successes": 0,
+      "death_save_failures": 0,
+      "stable": false,
+      "dead": false,
+      "conditions": []
+    }
+  ],
+  "event_log": [
+    {
+      "round": 0,
+      "event_type": "encounter_started",
+      "encounter_name": "Spell Catalog Demo",
+      "seed": 1337,
+      "rules_version": "5.2.1",
+      "engine_version": "0.3.0"
+    },
+    {
+      "round": 0,
+      "event_type": "initiative_rolled",
+      "creature_id": "fighter_1",
+      "creature_name": "Human Fighter",
+      "roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          20
+        ],
+        "selected": 20
+      },
+      "initiative_bonus": 2,
+      "initiative_total": 22,
+      "dex_score": 10,
+      "tie_break_coin": 0.9255354071651813
+    },
+    {
+      "round": 0,
+      "event_type": "initiative_rolled",
+      "creature_id": "wizard_1",
+      "creature_name": "Elf Wizard",
+      "roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          12
+        ],
+        "selected": 12
+      },
+      "initiative_bonus": 3,
+      "initiative_total": 15,
+      "dex_score": 10,
+      "tie_break_coin": 0.5709789811505924
+    },
+    {
+      "round": 0,
+      "event_type": "initiative_rolled",
+      "creature_id": "goblin_1",
+      "creature_name": "Goblin Raider",
+      "roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          6
+        ],
+        "selected": 6
+      },
+      "initiative_bonus": 2,
+      "initiative_total": 8,
+      "dex_score": 10,
+      "tie_break_coin": 0.7751996280578802
+    },
+    {
+      "round": 0,
+      "event_type": "initiative_rolled",
+      "creature_id": "shaman_1",
+      "creature_name": "Goblin Shaman",
+      "roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          11
+        ],
+        "selected": 11
+      },
+      "initiative_bonus": 1,
+      "initiative_total": 12,
+      "dex_score": 10,
+      "tie_break_coin": 0.38370480861420864
+    },
+    {
+      "round": 1,
+      "event_type": "round_started",
+      "round_number": 1
+    },
+    {
+      "round": 1,
+      "event_type": "turn_started",
+      "creature_id": "fighter_1",
+      "creature_name": "Human Fighter",
+      "current_hp": 20,
+      "conditions": []
+    },
+    {
+      "round": 1,
+      "event_type": "attack_declared",
+      "attacker_id": "fighter_1",
+      "attacker_name": "Human Fighter",
+      "target_id": "goblin_1",
+      "target_name": "Goblin Raider",
+      "action": {
+        "id": "longsword",
+        "name": "Longsword",
+        "kind": "attack",
+        "attack_bonus": 5,
+        "damage": "1d8+3",
+        "damage_type": "slashing",
+        "is_melee": true,
+        "range_feet": 5,
+        "resolution_mode": "attack",
+        "save_ability": null,
+        "save_dc": null,
+        "half_damage_on_save": false,
+        "condition_on_failed_save": null,
+        "condition_duration_rounds": null,
+        "spell_level": null,
+        "school": null,
+        "spell_ref": null,
+        "source_id": null,
+        "economy_slot": "action",
+        "notes": null,
+        "requires_concentration": false,
+        "aoe_shape": null,
+        "aoe_size_feet": null
+      }
+    },
+    {
+      "round": 1,
+      "event_type": "attack_resolved",
+      "attacker_id": "fighter_1",
+      "attacker_name": "Human Fighter",
+      "target_id": "goblin_1",
+      "target_name": "Goblin Raider",
+      "result": "hit",
+      "attack_roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          12
+        ],
+        "selected": 12
+      },
+      "attack_bonus": 5,
+      "attack_total": 17,
+      "target_ac": 15,
+      "damage_detail": {
+        "expression": "1d8+3",
+        "crit": false,
+        "dice_count": 1,
+        "die_size": 8,
+        "rolls": [
+          5
+        ],
+        "modifier": 3,
+        "total": 8
+      },
+      "damage_modifier": null,
+      "damage_applied": 8,
+      "target_hp_before": 7,
+      "target_hp_after": 0,
+      "action_kind": "attack",
+      "economy_slot": "action"
+    },
+    {
+      "round": 1,
+      "event_type": "creature_died",
+      "creature_id": "goblin_1",
+      "creature_name": "Goblin Raider",
+      "reason": "massive_damage",
+      "defeated_by_id": "fighter_1",
+      "defeated_by_name": "Human Fighter"
+    },
+    {
+      "round": 1,
+      "event_type": "turn_started",
+      "creature_id": "wizard_1",
+      "creature_name": "Elf Wizard",
+      "current_hp": 14,
+      "conditions": []
+    },
+    {
+      "round": 1,
+      "event_type": "aoe_targets_selected",
+      "creature_id": "wizard_1",
+      "creature_name": "Elf Wizard",
+      "spell_ref": "spell.fire_bolt",
+      "aoe_shape": null,
+      "aoe_size_feet": null,
+      "target_ids": [
+        "shaman_1"
+      ]
+    },
+    {
+      "round": 1,
+      "event_type": "attack_declared",
+      "attacker_id": "wizard_1",
+      "attacker_name": "Elf Wizard",
+      "target_id": "shaman_1",
+      "target_name": "Goblin Shaman",
+      "action": {
+        "id": "cast_fire_bolt",
+        "name": "Cast Fire Bolt",
+        "kind": "spell",
+        "attack_bonus": 5,
+        "damage": "1d10",
+        "damage_type": "fire",
+        "is_melee": false,
+        "range_feet": 120,
+        "resolution_mode": "attack",
+        "save_ability": null,
+        "save_dc": null,
+        "half_damage_on_save": false,
+        "condition_on_failed_save": null,
+        "condition_duration_rounds": null,
+        "spell_level": 0,
+        "school": "evocation",
+        "spell_ref": "spell.fire_bolt",
+        "source_id": "srd-5.2.1",
+        "economy_slot": "action",
+        "notes": "Header: Evocation Cantrip (Sorcerer, Wizard) Casting Time: Action Range: 120 feet Components: V, S Duration: Instantaneous Classes: Sorcerer, Wizard Text: You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn\u2019t being worn or carried. Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
+        "requires_concentration": false,
+        "aoe_shape": null,
+        "aoe_size_feet": null
+      }
+    },
+    {
+      "round": 1,
+      "event_type": "attack_resolved",
+      "attacker_id": "wizard_1",
+      "attacker_name": "Elf Wizard",
+      "target_id": "shaman_1",
+      "target_name": "Goblin Shaman",
+      "result": "hit",
+      "attack_roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          13
+        ],
+        "selected": 13
+      },
+      "attack_bonus": 5,
+      "attack_total": 18,
+      "target_ac": 13,
+      "damage_detail": {
+        "expression": "1d10",
+        "crit": false,
+        "dice_count": 1,
+        "die_size": 10,
+        "rolls": [
+          4
+        ],
+        "modifier": 0,
+        "total": 4
+      },
+      "damage_modifier": null,
+      "damage_applied": 4,
+      "target_hp_before": 10,
+      "target_hp_after": 6,
+      "action_kind": "spell",
+      "economy_slot": "action"
+    },
+    {
+      "round": 1,
+      "event_type": "turn_started",
+      "creature_id": "shaman_1",
+      "creature_name": "Goblin Shaman",
+      "current_hp": 6,
+      "conditions": []
+    },
+    {
+      "round": 1,
+      "event_type": "aoe_targets_selected",
+      "creature_id": "shaman_1",
+      "creature_name": "Goblin Shaman",
+      "spell_ref": "spell.acid_splash",
+      "aoe_shape": "sphere",
+      "aoe_size_feet": 5,
+      "target_ids": [
+        "wizard_1",
+        "fighter_1"
+      ]
+    },
+    {
+      "round": 1,
+      "event_type": "saving_throw_resolved",
+      "caster_id": "shaman_1",
+      "caster_name": "Goblin Shaman",
+      "target_id": "wizard_1",
+      "target_name": "Elf Wizard",
+      "save_ability": "dex",
+      "save_dc": 12,
+      "save_roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          12
+        ],
+        "selected": 12
+      },
+      "save_bonus": 3,
+      "save_total": 15,
+      "success": true,
+      "auto_failed": false,
+      "action": {
+        "id": "cast_acid_splash",
+        "name": "Cast Acid Splash",
+        "kind": "spell",
+        "attack_bonus": null,
+        "damage": "1d6",
+        "damage_type": "acid",
+        "is_melee": false,
+        "range_feet": 60,
+        "resolution_mode": "save",
+        "save_ability": "dex",
+        "save_dc": 12,
+        "half_damage_on_save": false,
+        "condition_on_failed_save": null,
+        "condition_duration_rounds": null,
+        "spell_level": 0,
+        "school": "evocation",
+        "spell_ref": "spell.acid_splash",
+        "source_id": "srd-5.2.1",
+        "economy_slot": "action",
+        "notes": "Header: Evocation Cantrip (Sorcerer, Wizard) Casting Time: Action Range: 60 feet Components: V, S Duration: Instantaneous Classes: Sorcerer, Wizard Text: You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage. Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "requires_concentration": false,
+        "aoe_shape": "sphere",
+        "aoe_size_feet": 5
+      }
+    },
+    {
+      "round": 1,
+      "event_type": "spell_resolved",
+      "caster_id": "shaman_1",
+      "caster_name": "Goblin Shaman",
+      "target_id": "wizard_1",
+      "target_name": "Elf Wizard",
+      "spell_ref": "spell.acid_splash",
+      "source_id": "srd-5.2.1",
+      "resolution_mode": "save",
+      "result": "save_success",
+      "damage_rolled": 1,
+      "damage_applied": 0,
+      "damage_modifier": null,
+      "damage_detail": {
+        "expression": "1d6",
+        "crit": false,
+        "dice_count": 1,
+        "die_size": 6,
+        "rolls": [
+          1
+        ],
+        "modifier": 0,
+        "total": 1
+      },
+      "target_hp_before": 14,
+      "target_hp_after": 14,
+      "condition_applied": null,
+      "economy_slot": "action"
+    },
+    {
+      "round": 1,
+      "event_type": "saving_throw_resolved",
+      "caster_id": "shaman_1",
+      "caster_name": "Goblin Shaman",
+      "target_id": "fighter_1",
+      "target_name": "Human Fighter",
+      "save_ability": "dex",
+      "save_dc": 12,
+      "save_roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          14
+        ],
+        "selected": 14
+      },
+      "save_bonus": 1,
+      "save_total": 15,
+      "success": true,
+      "auto_failed": false,
+      "action": {
+        "id": "cast_acid_splash",
+        "name": "Cast Acid Splash",
+        "kind": "spell",
+        "attack_bonus": null,
+        "damage": "1d6",
+        "damage_type": "acid",
+        "is_melee": false,
+        "range_feet": 60,
+        "resolution_mode": "save",
+        "save_ability": "dex",
+        "save_dc": 12,
+        "half_damage_on_save": false,
+        "condition_on_failed_save": null,
+        "condition_duration_rounds": null,
+        "spell_level": 0,
+        "school": "evocation",
+        "spell_ref": "spell.acid_splash",
+        "source_id": "srd-5.2.1",
+        "economy_slot": "action",
+        "notes": "Header: Evocation Cantrip (Sorcerer, Wizard) Casting Time: Action Range: 60 feet Components: V, S Duration: Instantaneous Classes: Sorcerer, Wizard Text: You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage. Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "requires_concentration": false,
+        "aoe_shape": "sphere",
+        "aoe_size_feet": 5
+      }
+    },
+    {
+      "round": 1,
+      "event_type": "spell_resolved",
+      "caster_id": "shaman_1",
+      "caster_name": "Goblin Shaman",
+      "target_id": "fighter_1",
+      "target_name": "Human Fighter",
+      "spell_ref": "spell.acid_splash",
+      "source_id": "srd-5.2.1",
+      "resolution_mode": "save",
+      "result": "save_success",
+      "damage_rolled": 6,
+      "damage_applied": 0,
+      "damage_modifier": null,
+      "damage_detail": {
+        "expression": "1d6",
+        "crit": false,
+        "dice_count": 1,
+        "die_size": 6,
+        "rolls": [
+          6
+        ],
+        "modifier": 0,
+        "total": 6
+      },
+      "target_hp_before": 20,
+      "target_hp_after": 20,
+      "condition_applied": null,
+      "economy_slot": "action"
+    },
+    {
+      "round": 1,
+      "event_type": "turn_skipped_defeated",
+      "creature_id": "goblin_1",
+      "creature_name": "Goblin Raider"
+    },
+    {
+      "round": 2,
+      "event_type": "round_started",
+      "round_number": 2
+    },
+    {
+      "round": 2,
+      "event_type": "turn_started",
+      "creature_id": "fighter_1",
+      "creature_name": "Human Fighter",
+      "current_hp": 20,
+      "conditions": []
+    },
+    {
+      "round": 2,
+      "event_type": "attack_declared",
+      "attacker_id": "fighter_1",
+      "attacker_name": "Human Fighter",
+      "target_id": "shaman_1",
+      "target_name": "Goblin Shaman",
+      "action": {
+        "id": "longsword",
+        "name": "Longsword",
+        "kind": "attack",
+        "attack_bonus": 5,
+        "damage": "1d8+3",
+        "damage_type": "slashing",
+        "is_melee": true,
+        "range_feet": 5,
+        "resolution_mode": "attack",
+        "save_ability": null,
+        "save_dc": null,
+        "half_damage_on_save": false,
+        "condition_on_failed_save": null,
+        "condition_duration_rounds": null,
+        "spell_level": null,
+        "school": null,
+        "spell_ref": null,
+        "source_id": null,
+        "economy_slot": "action",
+        "notes": null,
+        "requires_concentration": false,
+        "aoe_shape": null,
+        "aoe_size_feet": null
+      }
+    },
+    {
+      "round": 2,
+      "event_type": "attack_resolved",
+      "attacker_id": "fighter_1",
+      "attacker_name": "Human Fighter",
+      "target_id": "shaman_1",
+      "target_name": "Goblin Shaman",
+      "result": "hit",
+      "attack_roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          13
+        ],
+        "selected": 13
+      },
+      "attack_bonus": 5,
+      "attack_total": 18,
+      "target_ac": 13,
+      "damage_detail": {
+        "expression": "1d8+3",
+        "crit": false,
+        "dice_count": 1,
+        "die_size": 8,
+        "rolls": [
+          2
+        ],
+        "modifier": 3,
+        "total": 5
+      },
+      "damage_modifier": null,
+      "damage_applied": 5,
+      "target_hp_before": 6,
+      "target_hp_after": 1,
+      "action_kind": "attack",
+      "economy_slot": "action"
+    },
+    {
+      "round": 2,
+      "event_type": "turn_started",
+      "creature_id": "wizard_1",
+      "creature_name": "Elf Wizard",
+      "current_hp": 14,
+      "conditions": []
+    },
+    {
+      "round": 2,
+      "event_type": "aoe_targets_selected",
+      "creature_id": "wizard_1",
+      "creature_name": "Elf Wizard",
+      "spell_ref": "spell.fire_bolt",
+      "aoe_shape": null,
+      "aoe_size_feet": null,
+      "target_ids": [
+        "shaman_1"
+      ]
+    },
+    {
+      "round": 2,
+      "event_type": "attack_declared",
+      "attacker_id": "wizard_1",
+      "attacker_name": "Elf Wizard",
+      "target_id": "shaman_1",
+      "target_name": "Goblin Shaman",
+      "action": {
+        "id": "cast_fire_bolt",
+        "name": "Cast Fire Bolt",
+        "kind": "spell",
+        "attack_bonus": 5,
+        "damage": "1d10",
+        "damage_type": "fire",
+        "is_melee": false,
+        "range_feet": 120,
+        "resolution_mode": "attack",
+        "save_ability": null,
+        "save_dc": null,
+        "half_damage_on_save": false,
+        "condition_on_failed_save": null,
+        "condition_duration_rounds": null,
+        "spell_level": 0,
+        "school": "evocation",
+        "spell_ref": "spell.fire_bolt",
+        "source_id": "srd-5.2.1",
+        "economy_slot": "action",
+        "notes": "Header: Evocation Cantrip (Sorcerer, Wizard) Casting Time: Action Range: 120 feet Components: V, S Duration: Instantaneous Classes: Sorcerer, Wizard Text: You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn\u2019t being worn or carried. Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
+        "requires_concentration": false,
+        "aoe_shape": null,
+        "aoe_size_feet": null
+      }
+    },
+    {
+      "round": 2,
+      "event_type": "attack_resolved",
+      "attacker_id": "wizard_1",
+      "attacker_name": "Elf Wizard",
+      "target_id": "shaman_1",
+      "target_name": "Goblin Shaman",
+      "result": "hit",
+      "attack_roll_detail": {
+        "mode": "normal",
+        "rolls": [
+          17
+        ],
+        "selected": 17
+      },
+      "attack_bonus": 5,
+      "attack_total": 22,
+      "target_ac": 13,
+      "damage_detail": {
+        "expression": "1d10",
+        "crit": false,
+        "dice_count": 1,
+        "die_size": 10,
+        "rolls": [
+          6
+        ],
+        "modifier": 0,
+        "total": 6
+      },
+      "damage_modifier": null,
+      "damage_applied": 6,
+      "target_hp_before": 1,
+      "target_hp_after": 0,
+      "action_kind": "spell",
+      "economy_slot": "action"
+    },
+    {
+      "round": 2,
+      "event_type": "creature_defeated",
+      "creature_id": "shaman_1",
+      "creature_name": "Goblin Shaman",
+      "defeated_by_id": "wizard_1",
+      "defeated_by_name": "Elf Wizard"
+    },
+    {
+      "round": 2,
+      "event_type": "encounter_ended",
+      "winner": "heroes",
+      "reason": "winner_found"
+    }
+  ]
+}
