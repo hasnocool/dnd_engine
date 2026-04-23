@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/action.schema.json",
+  "title": "Action",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "kind"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "kind": {"type": "string", "enum": ["attack", "spell", "heal", "dash", "dodge", "disengage", "help", "custom"]},
+    "attack_bonus": {"type": "integer"},
+    "damage": {"type": "string", "pattern": "^\\s*\\d*d\\d+\\s*([+-]\\s*\\d+)?\\s*$"},
+    "damage_type": {"type": "string", "default": "untyped"},
+    "is_melee": {"type": "boolean", "default": true},
+    "range_feet": {"type": "integer", "minimum": 0, "default": 5},
+    "spell_ref": {"type": "string", "minLength": 1},
+    "attack_bonus_override": {"type": "integer"},
+    "save_dc_override": {"type": "integer", "minimum": 1},
+    "damage_override": {"type": "string", "pattern": "^\\s*\\d*d\\d+\\s*([+-]\\s*\\d+)?\\s*$"},
+    "half_damage_on_save_override": {"type": "boolean"},
+    "condition_on_failed_save_override": {"type": "string", "minLength": 1},
+    "condition_duration_rounds_override": {"type": ["integer", "null"], "minimum": 1},
+    "notes": {"type": "string"}
+  },
+  "allOf": [
+    {"if": {"properties": {"kind": {"const": "attack"}}, "required": ["kind"]}, "then": {"required": ["attack_bonus", "damage"]}},
+    {"if": {"properties": {"kind": {"const": "spell"}}, "required": ["kind"]}, "then": {"required": ["spell_ref"]}}
+  ]
+}
